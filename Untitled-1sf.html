@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viu Space</title>
+    <style>
+        
+        body {
+            background-color: #ced4f6;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: navy;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            
+        }
+        
+        h1 {
+            font-size: 53px;
+            margin: 0;
+        }
+
+        h2 {
+            color: rgb(35, 58, 58);
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #cbc8ef;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: rgb(42, 1, 1);
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .content-section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .color-box {
+            background-color: #e0f7fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .title {
+            font-weight: bold;
+            color: navy;
+        }
+        
+        #intro {
+            font-style: italic;
+            color: rgb(9, 0, 26);
+        }
+
+        .box-model {
+            width: 300px;
+            padding: 20px;
+            border: 2px solid black;
+            margin: 20px auto;
+            background-color: white;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .container {
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+            position: relative;
+
+        }
+        .bubbles {
+            position: relative;
+            display: flex;
+        }
+
+        .bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+                0 0 50px #4fc3dc,
+                0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+.bubbles span:nth-child(even) 
+{
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+                0 0 50px #ff2d75,
+                0 0 100px #ff2d75;
+}
+        @keyframes animate 
+{
+    0%
+{
+    transform: translateY(100vh) scale(0);
+}
+100%
+{
+    transform: translateY(-10vh) scale(1);
+}
+}
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <h1>Let's Go to Space!</h1>
+        
+    </header>
+
+    <nav>
+        <a href="#intro">Introduction</a>
+        <a href="#colors">Planets</a>
+        <a href="#text-styling">Constellations</a>
+        <a href="#box-model">Dark Matter</a>
+    </nav>
+    <div class="content-section" id="intro">
+        <h2 class="title">What is Space?</h2>
+        <p id="intro">Space is a vast, endless expanse beyond Earth’s atmosphere, where planets, stars, moons, and galaxies exist. When you look at the night sky, you see just a small part of it, filled with shining stars and bright planets. But space is much larger than what our eyes can see, stretching infinitely in all directions. Scientists are still unsure if it has a boundary.
+
+            Unlike Earth, space has no air, which means humans can’t breathe there without special suits. It is also completely silent because sound needs air to travel. Though space may seem empty, it is not entirely nothing—it contains tiny particles, radiation, and powerful forces like gravity, which keeps planets moving around stars, including Earth orbiting the Sun.
+            
+            Space is home to amazing and mysterious things like black holes, which are so strong that even light cannot escape them. There are also nebulae—huge clouds of gas and dust where new stars are formed. The universe is always expanding, meaning space is growing every second!
+            
+            Even though humans have traveled to the Moon and sent robots to Mars, space is still full of unknowns. Scientists use powerful telescopes to explore distant planets and galaxies, searching for new discoveries and even signs of life. Who knows what we might find in the future?</p>
+
+<iframe width="560" height="315" src="c:\Users\HP\Downloads\Catequista_Activity2\galaxy stock video...  copyright free galaxy video.mp4" title="YT"></iframe>
+
+            <video width="600" height="400" controls>
+                <source src=“c:\Users\HP\Downloads\Catequista_Activity2\galaxy stock video...  copyright free galaxy video.mp4" type="video/mp4">
+                </video>
+            
+    </div>
+
+    <div class="content-section" id="colors">
+        <h2>The Planets in Our Solar System</h2>
+            <p class="color-example">Our solar system has eight planets, each unique in its own way. They all orbit the Sun, which is the center of our solar system. The planets are divided into two groups: rocky planets (Mercury, Venus, Earth, and Mars) and gas giants (Jupiter, Saturn, Uranus, and Neptune). <br>Let’s explore each one!</p></br>
+        <p>1. Mercury – is the closest planet to the Sun and the smallest in the solar system. Because it is so close to the Sun, it has extreme temperatures—burning hot during the day and freezing cold at night. It has no atmosphere to trap heat, and a day on Mercury lasts much longer than a day on Earth.<br>
+            
+            <br>2. Venus – is the second planet from the Sun and the hottest in the solar system. Its thick atmosphere traps heat, creating a greenhouse effect that makes it even hotter than Mercury! Venus is often called Earth’s "twin" because of its similar size, but it is covered in clouds of toxic gas, making it impossible for humans to live there.</br>
+            
+            <br>3. Earth – is the third planet from the Sun and the only one known to support life. It has the perfect conditions—water, oxygen, and a stable climate—to allow plants, animals, and humans to survive. About 71% of Earth is covered in water, and its atmosphere protects us from harmful space radiation.</br>
+            
+            <br>4. Mars – is the fourth planet from the Sun and is famous for its red color, caused by iron-rich dust on its surface. It has the largest volcano in the solar system, called Olympus Mons. Scientists believe that Mars may have had liquid water in the past, and they are studying it to see if life could exist there.</br>
+            
+            <br> 5. Jupiter – is the fifth planet from the Sun and the largest in the solar system. It is mostly made of gas and has a giant storm called the Great Red Spot, which has been raging for centuries. Jupiter has more than 90 moons, including Ganymede, the biggest moon in the solar system.</br>
+            
+            <br> 6. Saturn – is the sixth planet and is best known for its beautiful rings, which are made of ice and rock. It is also a gas giant like Jupiter. Saturn has dozens of moons, including Titan, which is the second-largest moon in the solar system and has an atmosphere thicker than Earth's.</br>
+            
+            <br> 7. Uranus – is the seventh planet from the Sun and is unique because it rotates on its side! It has a bluish-green color due to the methane in its atmosphere. Uranus is an ice giant, meaning it has a cold and icy interior. It also has faint rings, though they are not as visible as Saturn's.</br>
+            
+            <br> 8. Neptune – is the eighth and farthest planet from the Sun. It is a deep blue ice giant with the strongest winds in the solar system, reaching speeds faster than a hurricane! Neptune has 14 known moons, and its largest, Triton, orbits the planet in the opposite direction of its rotation.</p>
+    </div>
+
+    <div class="content-section" id="text-styling">
+        <h2>What Are Constellations?</h2>
+        <p>Constellations are groups of stars that form patterns in the night sky. People have been looking at these patterns for thousands of years and giving them names based on their shapes, often inspired by animals, mythological figures, or objects. Even though the stars in a constellation may be far apart from each other in space, they appear close when seen from Earth.
+
+        </br>There are 88 official constellations, covering the entire sky. Some of the most famous ones include:</br>
+            
+            <br> Orion – Looks like a hunter and is one of the easiest constellations to recognize. It has three bright stars in a row, known as Orion’s Belt.</br>
+            <br> Ursa Major – Also called the Great Bear, it contains the Big Dipper, a famous star pattern used for navigation.</br>
+            <br> Ursa Minor – Also called the Little Bear, it contains Polaris, the North Star, which helps travelers find their way.</br>
+            <br> Leo – Resembles a lion and is one of the zodiac constellations.</br>
+            <h2>Do Constellations Stay the Same?</h2>
+            <p>From Earth, constellations seem fixed, but in reality, stars are moving through space. Over thousands of years, the shapes of constellations will slowly change. Also, depending on where you are on Earth, you may see different constellations. Some are visible only in one hemisphere, while others, like Orion, can be seen from both the Northern and Southern Hemispheres at different times of the year.</p>
+   
+    
+        </div>
+
+    <div class="content-section" id="box-model">
+        <h2>What is Dark Matter?</h2>
+        <div class="box-model">
+            Dark matter is a mysterious, invisible substance that makes up most of the matter in the universe. Scientists believe it exists because galaxies move in ways that don’t match the amount of visible matter we can see. If we only counted stars, planets, and gas, galaxies should fly apart due to their high speed. But something unseen is holding them together with extra gravity, and that "something" is what we call dark matter. Unlike normal matter, dark matter doesn’t give off light, which makes it impossible to see directly.
+
+Even though we can’t observe dark matter, scientists have found clues that it’s there. One major clue is gravitational lensing, where the light from distant galaxies bends around invisible mass, showing that something hidden is affecting it. Another clue is how galaxies are spread across the universe—computer models suggest that without dark matter, the universe wouldn’t have formed the way it did. While we still don’t know exactly what dark matter is made of, scientists believe it could be made of unknown particles that don’t interact with light or normal matter.
+
+Dark matter isn’t dangerous because it doesn’t interact with us in any harmful way. It simply influences the universe through gravity, shaping galaxies and helping to keep everything in place. Even though we can’t see it, dark matter makes up about 85% of all matter in the universe! Scientists continue to study it, hoping to one day unlock its secrets. The more we learn about dark matter, the closer we get to understanding what the universe is truly made of. Who knows what exciting discoveries the future holds? 🌌✨
+       
+<div class="container">
+    <div class="bubbles">
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span> 
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+    </div>
+</div>
+
+</div>
+    </div>
+    <img src="c:\Users\HP\Downloads\Catequista_Activity2\What-is-Solar-System.webp" alt="Image of Space" width="500">
+    <img src="c:\Users\HP\Downloads\Catequista_Activity2\images (1).jpg" alt="Image of Space" width="500">
+    <img src="c:\Users\HP\Downloads\Catequista_Activity2\images.jpg" alt="Image of Space" width="500">
+    <img src="c:\Users\HP\Downloads\Catequista_Activity2\giphy.gif" alt="Image of Space" width="500">
+    <img src="c:\Users\HP\Downloads\Catequista_Activity2\d9b6291de3fcadc58dd470cc6c91515e_w200.gif" alt="Image of Space" width="500">
+    <img src="c:\Users\HP\Downloads\Catequista_Activity2\469fd23951715068193efe0ccd879f4b.gif" alt="Image of Space" width="500">
+
+    <footer>
+        <p>&copy; 2025 ViewSpace. All rights reserved.</p>
+    </footer>
+</body>
+</html>
